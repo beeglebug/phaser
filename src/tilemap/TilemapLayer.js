@@ -341,12 +341,10 @@ Phaser.TilemapLayer.prototype._unfixY = function(y) {
 * Convert a pixel value to a tile coordinate.
 * @method Phaser.TilemapLayer#getTileX
 * @memberof Phaser.TilemapLayer
-* @param {number} x - X position of the point in target tile.
-* @return {Phaser.Tile} The tile with specific properties.
+* @param {number} x - x position in pixels
+* @return {number} x position in tile coordinates
 */
 Phaser.TilemapLayer.prototype.getTileX = function (x) {
-
-    // var tileWidth = this.tileWidth * this.scale.x;
 
     return this.game.math.snapToFloor(this._fixX(x), this.map.tileWidth) / this.map.tileWidth;
 
@@ -356,12 +354,10 @@ Phaser.TilemapLayer.prototype.getTileX = function (x) {
 * Convert a pixel value to a tile coordinate.
 * @method Phaser.TilemapLayer#getTileY
 * @memberof Phaser.TilemapLayer
-* @param {number} y - Y position of the point in target tile.
-* @return {Phaser.Tile} The tile with specific properties.
+* @param {number} y - y position in pixels
+* @return {number} y position in tile coordinates
 */
 Phaser.TilemapLayer.prototype.getTileY = function (y) {
-
-    // var tileHeight = this.tileHeight * this.scale.y;
 
     return this.game.math.snapToFloor(this._fixY(y), this.map.tileHeight) / this.map.tileHeight;
 

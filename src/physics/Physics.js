@@ -16,7 +16,7 @@
 *
 * @constructor
 * @param {Phaser.Game} game - A reference to the currently running game.
-* @param {object} [physicsConfig=null] - A physics configuration object to pass to the Physics world on creation.
+* @param {object} [config=null] - A physics configuration object to pass to the Physics world on creation.
 */
 Phaser.Physics = function (game, config) {
 

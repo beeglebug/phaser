@@ -114,7 +114,7 @@ Phaser.Circle.prototype = {
     * (can be Circle, Point or anything with x/y properties)
     * @method Phaser.Circle#distance
     * @param {object} dest - The target object. Must have visible x and y properties that represent the center of the object.
-    * @param {boolean} [round] - Round the distance to the nearest integer (default false).
+    * @param {boolean} [round=false] - Round the distance to the nearest integer (default false).
     * @return {number} The distance between this Point object and the destination Point object.
     */
     distance: function (dest, round) {

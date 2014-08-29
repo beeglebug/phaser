@@ -202,7 +202,7 @@ Phaser.Rectangle.prototype = {
     * A Rectangle object is said to contain another if the second Rectangle object falls entirely within the boundaries of the first.
     * @method Phaser.Rectangle#containsRect
     * @param {Phaser.Rectangle} b - The second Rectangle object.
-    * @return {boolean} A value of true if the Rectangle object contains the specified point; otherwise false.
+    * @return {boolean} A value of true if the Rectangle object fully contains the specified rectangle; otherwise false.
     */
     containsRect: function (b) {
 
